@@ -11,8 +11,8 @@ jobs:
     container:
       image: davidkuk/helloworld:1.17
       
-    steps:
-      - name: Run docker continer
-        run: echo "ok"
+    #steps:
+     # - name: Run docker continer
+        #run: echo "ok"
         #ses: docker://davidkuk/helloworld:1.17
         #uses: docker://hello-world:latest
