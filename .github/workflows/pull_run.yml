@@ -7,10 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone
-        uses: actions/checkout@v3
-      - name: Ls
-        run: ls
       - name: Run docker continer
-        #uses: docker://davidkuk/helloworld:1.17
-        uses: docker://hello-world:latest
+        uses: docker://davidkuk/helloworld:1.17
+        #working-directory: .//go_ap
+        #uses: docker://hello-world:latest
+        with:
+          options: -w="/go_app"
