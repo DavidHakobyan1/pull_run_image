@@ -8,9 +8,7 @@ jobs:
 
     steps:
       - name: Run docker continer
-        uses: docker://dockerid21656/updated_go_image:1.0.0
-        #uses: docker://davidkuk/helloworld:1.17
-        #working-directory: .//go_ap
+        uses: docker://davidkuk/helloworld:1.17
         #uses: docker://hello-world:latest
         #with:
         #  options: -w="/go_app"
