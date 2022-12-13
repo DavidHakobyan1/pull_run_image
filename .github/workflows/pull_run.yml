@@ -12,4 +12,5 @@ jobs:
       - name: Ls
         run: ls
       - name: Run docker continer
-        uses: docker://davidkuk/helloworld:1.17
+        #uses: docker://davidkuk/helloworld:1.17
+        uses: docker://hello-world:latest
