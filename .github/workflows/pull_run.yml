@@ -1,1 +1,9 @@
-
+name: Pull and Run Continer
+on:
+  push:
+    branches: [ 'main' ]
+jobs:
+  container-test-job:
+    runs-on: ubuntu-latest
+    container:
+      image: davidkuk/helloworld:1.17
