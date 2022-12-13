@@ -5,12 +5,14 @@ on:
 jobs:
   container-test-job:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: /go_app
     container:
       image: davidkuk/helloworld:1.17
       
     steps:
       - name: Run docker continer
-        run:
-          worng-directory: /go_app
+        run: echo "ok"
         #ses: docker://davidkuk/helloworld:1.17
         #uses: docker://hello-world:latest
