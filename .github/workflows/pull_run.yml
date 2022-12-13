@@ -8,10 +8,10 @@ jobs:
     container:
       image: davidkuk/helloworld:1.17
 
-    #steps:
-     # - name: Run docker continer
-     #   run: echo "end"
-        #uses: docker://davidkuk/helloworld:1.17
+    steps:
+      - name: Run docker continer
+        #run: echo "end"
+        uses: docker://davidkuk/helloworld:1.17
         #uses: docker://hello-world:latest
         #with:
         #  options: --workdir="/go_app"
