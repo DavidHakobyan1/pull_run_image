@@ -10,5 +10,5 @@ jobs:
       - name: Run docker continer
         uses: docker://davidkuk/helloworld:1.17
         #uses: docker://hello-world:latest
-        #with:
-        #  options: -w="/go_app"
+        with:
+          options: --workdir="/go_app"
