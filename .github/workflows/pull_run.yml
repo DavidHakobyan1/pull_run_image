@@ -8,8 +8,9 @@ jobs:
 
     steps:
       - name: Run docker continer
+        working-directory: /go_ap
         uses: docker://davidkuk/helloworld:1.17
         #working-directory: .//go_ap
         #uses: docker://hello-world:latest
-        with:
-          options: -w="/go_app"
+        #with:
+        #  options: -w="/go_app"
