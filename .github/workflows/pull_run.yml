@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run docker continer
-        uses: docker://davidkuk/helloworld:1.17
-        #uses: docker://hello-world:latest
+        #uses: docker://davidkuk/helloworld:1.17
+        uses: docker://hello-world:latest
