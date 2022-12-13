@@ -10,6 +10,7 @@ jobs:
 
     steps:
       - name: Run docker continer
+        run: echo "end"
         #uses: docker://davidkuk/helloworld:1.17
         #uses: docker://hello-world:latest
         #with:
