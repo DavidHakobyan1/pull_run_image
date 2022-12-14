@@ -8,5 +8,6 @@ jobs:
     steps:
       - name: Run docker continer
         #uses: docker://dockerid21656/updated_go_image:1.0.1
+        uses: docker://dockerid21656/updated_go_image:1.0.1
         with:
           image: dockerid21656/updated_go_image:1.0.1
