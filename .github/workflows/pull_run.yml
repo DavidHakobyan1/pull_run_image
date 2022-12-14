@@ -10,4 +10,5 @@ jobs:
         #uses: docker://dockerid21656/updated_go_image:1.0.1
         with:
           image: dockerid21656/updated_go_image:1.0.1
-          #options: -v ${{ github.workspace }}:/app
+          options: -v ${{ github.workspace }}:/app
+          run: ls
