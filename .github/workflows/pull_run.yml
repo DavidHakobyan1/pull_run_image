@@ -9,4 +9,4 @@ jobs:
       - name: Run docker continer
         uses: docker://dockerid21656/updated_go_image:1.0.1
         with:
-          entrypoint: /app
+          entrypoint: /app/main.go
